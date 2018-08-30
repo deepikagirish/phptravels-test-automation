@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22638" started-at="2018-08-30T16:27:39Z" finished-at="2018-08-30T16:28:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22638" started-at="2018-08-30T16:27:39Z" finished-at="2018-08-30T16:28:02Z">
+      <class name="com.automation.test.PhpTravelsMethods">
+        <test-method status="PASS" signature="load_Property()[pri:0, instance:com.automation.test.PhpTravelsMethods@3ecd23d9]" name="load_Property" is-config="true" duration-ms="843" started-at="2018-08-30T16:27:39Z" finished-at="2018-08-30T16:27:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- load_Property -->
+        <test-method status="PASS" signature="Tear_Down()[pri:0, instance:com.automation.test.PhpTravelsMethods@3ecd23d9]" name="Tear_Down" is-config="true" duration-ms="269" started-at="2018-08-30T16:28:02Z" finished-at="2018-08-30T16:28:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+      </class> <!-- com.automation.test.PhpTravelsMethods -->
+      <class name="com.automation.test.PhpTravelsTest">
+        <test-method status="PASS" signature="open_FirefoxBrowser()[pri:0, instance:com.automation.test.PhpTravelsTest@569cfc36]" name="open_FirefoxBrowser" is-config="true" duration-ms="11626" started-at="2018-08-30T16:27:39Z" finished-at="2018-08-30T16:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_FirefoxBrowser -->
+        <test-method status="PASS" signature="valid_LoginTest()[pri:0, instance:com.automation.test.PhpTravelsTest@569cfc36]" name="valid_LoginTest" duration-ms="9841" started-at="2018-08-30T16:27:51Z" finished-at="2018-08-30T16:28:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_LoginTest -->
+        <test-method status="PASS" signature="close_Browser()[pri:0, instance:com.automation.test.PhpTravelsTest@569cfc36]" name="close_Browser" is-config="true" duration-ms="1155" started-at="2018-08-30T16:28:01Z" finished-at="2018-08-30T16:28:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_Browser -->
+      </class> <!-- com.automation.test.PhpTravelsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

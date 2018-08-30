@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.automation.test.PhpTravelsTest">
+        <methods>
+          <include name="hotel_SearchTest"/>
+          <include name="close_Browser"/>
+          <include name="load_Property"/>
+          <include name="open_FirefoxBrowser"/>
+          <include name="Tear_Down"/>
+        </methods>
+      </class> <!-- com.automation.test.PhpTravelsTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

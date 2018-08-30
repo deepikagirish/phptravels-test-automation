@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="141170" started-at="2018-08-30T16:37:11Z" finished-at="2018-08-30T16:39:32Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="141170" started-at="2018-08-30T16:37:11Z" finished-at="2018-08-30T16:39:32Z">
+      <class name="com.automation.test.PhpTravelsTest">
+        <test-method status="PASS" signature="load_Property()[pri:0, instance:com.automation.test.PhpTravelsTest@48503868]" name="load_Property" is-config="true" duration-ms="716" started-at="2018-08-30T16:37:10Z" finished-at="2018-08-30T16:37:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- load_Property -->
+        <test-method status="PASS" signature="open_FirefoxBrowser()[pri:0, instance:com.automation.test.PhpTravelsTest@48503868]" name="open_FirefoxBrowser" is-config="true" duration-ms="12792" started-at="2018-08-30T16:37:11Z" finished-at="2018-08-30T16:37:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_FirefoxBrowser -->
+        <test-method status="PASS" signature="valid_LoginTest()[pri:0, instance:com.automation.test.PhpTravelsTest@48503868]" name="valid_LoginTest" duration-ms="12060" started-at="2018-08-30T16:37:24Z" finished-at="2018-08-30T16:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_LoginTest -->
+        <test-method status="PASS" signature="close_Browser()[pri:0, instance:com.automation.test.PhpTravelsTest@48503868]" name="close_Browser" is-config="true" duration-ms="980" started-at="2018-08-30T16:37:36Z" finished-at="2018-08-30T16:37:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_Browser -->
+        <test-method status="PASS" signature="open_FirefoxBrowser()[pri:0, instance:com.automation.test.PhpTravelsTest@48503868]" name="open_FirefoxBrowser" is-config="true" duration-ms="11033" started-at="2018-08-30T16:37:37Z" finished-at="2018-08-30T16:37:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_FirefoxBrowser -->
+        <test-method status="PASS" signature="bad_LoginPasswordTest()[pri:1, instance:com.automation.test.PhpTravelsTest@48503868]" name="bad_LoginPasswordTest" duration-ms="6918" started-at="2018-08-30T16:37:48Z" finished-at="2018-08-30T16:37:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bad_LoginPasswordTest -->
+        <test-method status="PASS" signature="close_Browser()[pri:0, instance:com.automation.test.PhpTravelsTest@48503868]" name="close_Browser" is-config="true" duration-ms="993" started-at="2018-08-30T16:37:55Z" finished-at="2018-08-30T16:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_Browser -->
+        <test-method status="PASS" signature="open_FirefoxBrowser()[pri:0, instance:com.automation.test.PhpTravelsTest@48503868]" name="open_FirefoxBrowser" is-config="true" duration-ms="12410" started-at="2018-08-30T16:37:56Z" finished-at="2018-08-30T16:38:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_FirefoxBrowser -->
+        <test-method status="PASS" signature="hotel_SearchTest()[pri:2, instance:com.automation.test.PhpTravelsTest@48503868]" name="hotel_SearchTest" duration-ms="83053" started-at="2018-08-30T16:38:08Z" finished-at="2018-08-30T16:39:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hotel_SearchTest -->
+        <test-method status="PASS" signature="close_Browser()[pri:0, instance:com.automation.test.PhpTravelsTest@48503868]" name="close_Browser" is-config="true" duration-ms="906" started-at="2018-08-30T16:39:31Z" finished-at="2018-08-30T16:39:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_Browser -->
+        <test-method status="PASS" signature="Tear_Down()[pri:0, instance:com.automation.test.PhpTravelsTest@48503868]" name="Tear_Down" is-config="true" duration-ms="358" started-at="2018-08-30T16:39:32Z" finished-at="2018-08-30T16:39:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+      </class> <!-- com.automation.test.PhpTravelsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
