@@ -8,15 +8,15 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.automation.base.PhpTravelsBaseClass;
+import com.automation.base.PhpTravelsBase;
 
 import bsh.org.objectweb.asm.Constants;
 
-public class PhpTravelsTest extends PhpTravelsBaseClass {
+public class PhpTravelsTest extends PhpTravelsBase {
 
 	@BeforeMethod
-	public static void open_FirefoxBrowser() {
-		driver = new FirefoxDriver();
+	public static void openBrowser() {
+		selectBrowser(prop.getProperty("browser"));
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
@@ -24,23 +24,23 @@ public class PhpTravelsTest extends PhpTravelsBaseClass {
 	}
 
 	@Test(priority = 0, enabled = true)
-	public static void valid_LoginTest() {
+	public static void validLoginTest() {
 		PhpTravelsMethods.login();
 	}
 
 	@Test(priority = 1, enabled = true)
-	public static void bad_LoginPasswordTest() {
-		PhpTravelsMethods.login_BadPassword();
+	public static void badLoginPasswordTest() {
+		PhpTravelsMethods.loginBadPassword();
 	}
 
 	@Test(priority = 2, enabled = true)
-	public static void hotel_SearchTest() {
+	public static void hotelSearchTest() {
 		PhpTravelsMethods.login();
 		PhpTravelsMethods.search();
 	}
 
 	@AfterMethod
-	public static void close_Browser() {
+	public static void closeBrowser() {
 		driver.quit();
 	}
 }

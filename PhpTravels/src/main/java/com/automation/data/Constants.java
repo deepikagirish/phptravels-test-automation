@@ -9,5 +9,9 @@ public class Constants {
 	public static final String PATH_EXCEL = "/src/main/java/com/automation/data/TestData.xlsx";
 	
 	public static final String PATH_REPORTS = "/OutputResults/TestResult.html";
+	
+	public static final String PATH_CHROME = "/DriverFiles/chromedriver.exe";
+			
+	public static final String PATH_IE = "/DriverFiles/IEDriverServer.exe";		
 
 }

@@ -1,6 +1,6 @@
 package com.automation.test;
 
-import com.automation.base.PhpTravelsBaseClass;
+import com.automation.base.PhpTravelsBase;
 import com.automation.object.GuestHomePage;
 import com.automation.object.LoginPage;
 import com.automation.object.UserAccountPage;
@@ -8,7 +8,7 @@ import com.automation.object.UserHomePage;
 import com.automation.object.UserHotelPage;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class PhpTravelsMethods extends PhpTravelsBaseClass {
+public class PhpTravelsMethods extends PhpTravelsBase {
 
 	public static void login() {
 		try {
@@ -35,12 +35,12 @@ public class PhpTravelsMethods extends PhpTravelsBaseClass {
 			if (iconSize > 0) {
 
 				test.log(LogStatus.PASS, "Login Passed. Expected Result - User navigated to Account Page. Actual Result - User navigated to Account Page.");
-				PhpTravelsBaseClass.take_Screenshot("Login", test);
+				PhpTravelsBase.takeScreenshot("Login", test);
 			}
 
 			else {
 				test.log(LogStatus.FAIL, "Login Failed");
-				PhpTravelsBaseClass.take_Screenshot("Login", test);
+				PhpTravelsBase.takeScreenshot("Login", test);
 			}
 
 			report.endTest(test);
@@ -48,12 +48,12 @@ public class PhpTravelsMethods extends PhpTravelsBaseClass {
 		} catch (Exception e) {
 			e.printStackTrace();
 			report.endTest(test);
-			PhpTravelsTest.close_Browser();
+			PhpTravelsTest.closeBrowser();
 		}
 
 	}
 
-	public static void login_BadPassword() {
+	public static void loginBadPassword() {
 		try {
 			test = report.startTest(excelLoginData.getCellValue(2, 0));
 
@@ -77,10 +77,10 @@ public class PhpTravelsMethods extends PhpTravelsBaseClass {
 
 			if (actualLabel.equalsIgnoreCase(expectedLabel)) {
 				test.log(LogStatus.PASS, "Login Failed. Expected Result - " +expectedLabel+ ". Actual Result - "+actualLabel);
-				PhpTravelsBaseClass.take_Screenshot("BadLogin", test);
+				PhpTravelsBase.takeScreenshot("BadLogin", test);
 			} else {
 				test.log(LogStatus.FAIL, "Login Passed. No error message found.");
-				PhpTravelsBaseClass.take_Screenshot("BadLogin", test);
+				PhpTravelsBase.takeScreenshot("BadLogin", test);
 			}
 
 			report.endTest(test);
@@ -88,7 +88,7 @@ public class PhpTravelsMethods extends PhpTravelsBaseClass {
 		} catch (Exception e) {
 			e.printStackTrace();
 			report.endTest(test);
-			PhpTravelsTest.close_Browser();
+			PhpTravelsTest.closeBrowser();
 		}
 	}
 
@@ -132,10 +132,10 @@ public class PhpTravelsMethods extends PhpTravelsBaseClass {
 					if (!resultCity.equalsIgnoreCase(cityInput)) {
 						test.log(LogStatus.FAIL,
 								" Search Failed. Expected Result - "  + cityInput + ". Actual Result - " + resultCity);
-						PhpTravelsBaseClass.take_Screenshot("Failed Output", test);
+						PhpTravelsBase.takeScreenshot("Failed Output", test);
 					} else {
 						test.log(LogStatus.PASS, " Search Successful. Result location is " + cityInput);
-						PhpTravelsBaseClass.take_Screenshot("Pass Output", test);
+						PhpTravelsBase.takeScreenshot("Pass Output", test);
 					}
 				} else {
 					if (resultSize > 1) {
@@ -145,17 +145,17 @@ public class PhpTravelsMethods extends PhpTravelsBaseClass {
 							if (!resultsCity.equalsIgnoreCase(cityInput)) {
 								test.log(LogStatus.FAIL,
 										"Search Failed. Expected Result - "  + cityInput + ". Actual Result - " + resultsCity);
-								PhpTravelsBaseClass.take_Screenshot("Failed Output" + k, test);
+								PhpTravelsBase.takeScreenshot("Failed Output" + k, test);
 								break;
 							} else {
 								test.log(LogStatus.PASS, " Search Successful. Result location is " + cityInput);
-								PhpTravelsBaseClass.take_Screenshot("Pass Output" + k, test);
+								PhpTravelsBase.takeScreenshot("Pass Output" + k, test);
 							}
 						}
 					} else {
 						test.log(LogStatus.FAIL,
 								"Expected Result - Error message for invalid input search criteria . Actual Result - No Results Found");
-						PhpTravelsBaseClass.take_Screenshot("Search Output - no error", test);
+						PhpTravelsBase.takeScreenshot("Search Output - no error", test);
 					}
 				}
 				report.endTest(test);
@@ -163,7 +163,7 @@ public class PhpTravelsMethods extends PhpTravelsBaseClass {
 		} catch (Exception e) {
 			e.printStackTrace();
 			report.endTest(test);
-			PhpTravelsTest.close_Browser();
+			PhpTravelsTest.closeBrowser();
 		}
 	}
 }

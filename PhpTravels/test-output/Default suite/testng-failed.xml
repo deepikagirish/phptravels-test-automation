@@ -5,11 +5,13 @@
     <classes>
       <class name="com.automation.test.PhpTravelsTest">
         <methods>
-          <include name="hotel_SearchTest"/>
-          <include name="close_Browser"/>
-          <include name="load_Property"/>
-          <include name="open_FirefoxBrowser"/>
-          <include name="Tear_Down"/>
+          <include name="hotelSearchTest"/>
+          <include name="TearDown"/>
+          <include name="openBrowser"/>
+          <include name="validLoginTest"/>
+          <include name="loadProperty"/>
+          <include name="closeBrowser"/>
+          <include name="badLoginPasswordTest"/>
         </methods>
       </class> <!-- com.automation.test.PhpTravelsTest -->
     </classes>
