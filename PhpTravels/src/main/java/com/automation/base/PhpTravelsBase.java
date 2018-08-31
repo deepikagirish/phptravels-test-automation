@@ -51,7 +51,7 @@ public class PhpTravelsBase {
 			report = new ExtentReports(System.getProperty("user.dir") + Constants.PATH_REPORTS);
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			test.log(LogStatus.ERROR, e);
 		}
 	}
 
@@ -60,7 +60,7 @@ public class PhpTravelsBase {
 		try {
 			report.flush();
 		} catch (Exception e) {
-			e.printStackTrace();
+			test.log(LogStatus.ERROR, e);
 		}
 	}
 
@@ -78,11 +78,11 @@ public class PhpTravelsBase {
 			extenttest.log(LogStatus.INFO, "Output Snapshot" + extenttest
 					.addScreenCapture(System.getProperty("user.dir") + "\\OutputResults\\" + fileName + ".png"));
 		} catch (Exception e) {
-			e.printStackTrace();
+			test.log(LogStatus.ERROR, e);;
 		}
 	}
 
-	public static WebDriver selectBrowser(String browser) {
+	public static void selectBrowser(String browser) {
 		try {
 			switch (browser.toUpperCase()) {
 			case "CH": {
@@ -100,10 +100,8 @@ public class PhpTravelsBase {
 				break;
 			}
 			}
-			return driver;
 		} catch (Exception e) {
-			e.printStackTrace();
-			return driver;
+			test.log(LogStatus.ERROR, e);
 		}
 	}
 }

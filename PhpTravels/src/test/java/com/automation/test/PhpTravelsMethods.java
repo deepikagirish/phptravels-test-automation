@@ -22,7 +22,7 @@ public class PhpTravelsMethods extends PhpTravelsBase {
 
 			GuestHomePage.drpd_Account(driver).get(1).click();
 			GuestHomePage.link_Login(driver).get(0).click();
-
+			
 			LoginPage.tbox_Email(driver).sendKeys(userName);
 			LoginPage.tbox_Passwd(driver).sendKeys(passWd);
 
@@ -46,7 +46,7 @@ public class PhpTravelsMethods extends PhpTravelsBase {
 			report.endTest(test);
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			test.log(LogStatus.ERROR, e);
 			report.endTest(test);
 			PhpTravelsTest.closeBrowser();
 		}
@@ -86,7 +86,7 @@ public class PhpTravelsMethods extends PhpTravelsBase {
 			report.endTest(test);
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			test.log(LogStatus.ERROR, e);
 			report.endTest(test);
 			PhpTravelsTest.closeBrowser();
 		}
@@ -161,7 +161,7 @@ public class PhpTravelsMethods extends PhpTravelsBase {
 				report.endTest(test);
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			test.log(LogStatus.ERROR, e);
 			report.endTest(test);
 			PhpTravelsTest.closeBrowser();
 		}
