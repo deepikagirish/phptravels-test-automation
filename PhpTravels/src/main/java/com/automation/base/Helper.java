@@ -11,8 +11,7 @@ public class Helper {
 	public static void testmethod2() {
 
 	}
-	
-	//comment
+
 	public static void testmethod3() {
 
 	}
@@ -20,5 +19,7 @@ public class Helper {
 	public static void testmethod4() {
 
 	}
+	
+	//adding comment
 
 }
