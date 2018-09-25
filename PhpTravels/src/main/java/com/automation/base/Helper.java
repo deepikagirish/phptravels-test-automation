@@ -13,7 +13,13 @@ public class Helper {
 	}
 	
 	
+
 public static void testmethod3() {
 		
 	}
+	
+public static void testmethod4() {
+		
+	}
+
 }
