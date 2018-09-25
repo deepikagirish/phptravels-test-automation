@@ -13,5 +13,9 @@ public class Constants {
 	public static final String PATH_CHROME = "/DriverFiles/chromedriver.exe";
 			
 	public static final String PATH_IE = "/DriverFiles/IEDriverServer.exe";		
+	
+	public static final String PATH_IE2 = "/DriverFiles/IEDriverServer.exe";	
+	
+	public static final String PATH_IE3 = "/DriverFiles/IEDriverServer.exe";	
 
 }
