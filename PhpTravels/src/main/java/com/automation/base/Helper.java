@@ -7,5 +7,9 @@ public class Helper {
 		//pass
 		
 	}
+	
+	public static void testmethod2() {
+		
+	}
 
 }
